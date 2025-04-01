@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: lightblue;
+    height: calc(100vh - 80px);
+}
+
+.col-left {
+    width: 200px;
+    border: 2px solid black;
+}
+
+.col-right {
+    width: calc(100% - 200px);
+    border: 2px solid black;
+}
+
+.header{
+    width:100%;
+    height: 80px;
+    background-color: black;
+}
+
+.footer{
+    width:100%;
+    height: 80px;
+    background-color: black;
+}
