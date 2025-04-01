@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -14,19 +18,65 @@
             <div class="flex">
                 <img src="spotify/img/logo.svg" alt="Logo-principale">
                 <ul class="aside-list">
-                    <li><span></span></li>
-                    <li></li>
-                    <li></li>
+                    <li><span><i class="fa-solid fa-house"></i></span> Home</li>
+                    <li><span><i class="fa-solid fa-magnifying-glass"></i></span> Cerca</li>
+                    <li><span><i class="fa-solid fa-book-open"></i></span> La tua libreria</li>
                 </ul>
+            </div>
+            <div class="playlist">
+                <h3>PLAYLIST</h3>
+                <p><button class="btn-play">+</button> Crea Playlist</p>
+                <ul>
+                    <li class="py-20">Nome Playlist</li>
+                    <li class="py-20">Nome Playlist</li>
+                    <li class="py-20">Nome Playlist</li>
+                    <li class="py-20">Nome Playlist</li>
+                    <li class="py-20">Nome Playlist</li>
+                    <li class="py-20">Nome Playlist</li>
+                    <li class="py-20">Nome Playlist</li>
+                </ul>
+
             </div>
         </aside>
 
-    <!-- SEZIONE DESTRA CONTENUTI -->
+        <!-- SEZIONE DESTRA CONTENUTI -->
         <main class="col-right">
             <header class="header">
                 <div class="button-1">
-                <button class="header-btn">EFFETUA  L'UPGRADE</button></div>
+                    <button class="header-btn">EFFETUA L'UPGRADE</button>
+                </div>
             </header>
+            <div class="navbar">
+                <ul>
+                    <li>In Evidenza</li>
+                    <li>Podcast</li>
+                    <li>Classifiche</li>
+                    <li>Generi E Mood</li>
+                    <li>Nuove Uscite</li>
+                    <li>Scopri</li>
+                </ul>
+            </div>
+            <h2>Recently played</h2>
+            <div class="col-1">
+                <div class="col-10"><img src="spotify/img/metal_lifting.jpg" alt="metal"></div>
+                <div class="col-10"><img src="spotify/img/stranger.jpeg" alt=""></div>
+                <div class="col-10"><img src="spotify/img/aquietplace.jpeg" alt=""></div>
+                <div class="col-10"><img src="spotify/img/split.jpeg" alt=""></div>
+                <div class="col-10"><img src="spotify/img/cure.jpeg" alt=""></div>
+                <div class="col-10"><img src="spotify/img/sinister.jpeg" alt=""></div>
+            </div>
+            <h2>Creato per John Doe</h2>
+            <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+            <div class="col-1">
+                <div class="col-10"></div>
+                <div class="col-10"></div>
+            </div>
+            <h2>Artisti più popolari</h2>
+            <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+            <div class="col-1">
+                <div class="col-10"></div>
+                <div class="col-10"></div>
+            </div>
         </main>
     </div>
     <footer class="footer"></footer>

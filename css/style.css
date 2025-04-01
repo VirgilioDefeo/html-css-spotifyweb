@@ -3,12 +3,13 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: "Montserrat", sans-serif;
 
 }
 
-img{
+img {
     max-width: 100%;
 }
 
@@ -16,18 +17,21 @@ img{
     display: flex;
     width: 100%;
     height: 100vh;
-    background-color: rgb(8,11,18);
+    background-color: rgb(8, 11, 18);
     height: calc(100vh - 80px);
 }
 
 .col-left {
     width: 200px;
     border: 2px solid black;
+    font-size: 13px;
+    padding: 10px;
 }
 
 .col-right {
     width: calc(100% - 200px);
-    border: 2px solid rgb(8,11,18);
+    border: 2px solid rgb(8, 11, 18);
+    overflow: auto;
 }
 
 .header {
@@ -58,21 +62,76 @@ img{
 }
 
 /* ASIDE SECTION */
-.flex{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
+
+
+.aside-list li {
+    list-style: none;
+    color: gray;
+    padding-top: 15px;
 }
 
-.aside-list{
-    list-style: none;
-color: gray;
-padding: 5px;
-padding-top: 20px;
+
+.playlist,
+p {
+    color: white;
+    padding-top: 20px;
 }
+
+
+.btn-play {
+    font-size: 30px;
+    height: 35px;
+    background-color: grey;
+}
+
+.py-20 {
+    padding-top: 20px;
+    list-style: none;
+}
+
+
+
 /* FINE ASIDE */
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: grey;
+    list-style: none;
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
+
+h2 {
+    color: white;
+}
+
+.col-1 {
+    display: flex;
+    border: 1px solid white;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    gap: 20px;
+}
+.col-10{
+width: 20%;
+height:200px;
+border: 1px solid white;
+gap:;
+
+}
+    
+
+
+
+
+
+
+
 
 .footer {
     width: 100%;
     height: 80px;
     background-color: black;
+}
