@@ -1,8 +1,14 @@
+  :root {
+    --num-cols: 6;
+} 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+
+
 
 body {
     font-family: "Montserrat", sans-serif;
@@ -11,8 +17,10 @@ body {
 
 img {
     max-width: 100%;
+    margin-bottom: 10px;
 }
 
+/* WRAPPER */
 .wrapper {
     display: flex;
     width: 100%;
@@ -20,24 +28,28 @@ img {
     background-color: rgb(8, 11, 18);
     height: calc(100vh - 80px);
 }
-
+/* BARRA ASIDE */
 .col-left {
     width: 200px;
     border: 2px solid black;
     font-size: 13px;
     padding: 10px;
+    overflow:auto;
 }
-
+/* MAIN CONTENT */
 .col-right {
     width: calc(100% - 200px);
     border: 2px solid rgb(8, 11, 18);
     overflow: auto;
+    padding-left: 10px;
 }
-
+/* HEADER */
 .header {
     width: 100%;
     height: 80px;
     background-color: black;
+    position: sticky;
+    top: 0;
 }
 
 .button-1 {
@@ -49,10 +61,6 @@ img {
 }
 
 .header-btn {
-
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
     background-color: black;
     color: white;
     border: 1px solid white;
@@ -60,14 +68,19 @@ img {
     padding: 12px 30px;
     font-size: 10px;
 }
+/* FINE HEADER */
 
 /* ASIDE SECTION */
-
 
 .aside-list li {
     list-style: none;
     color: gray;
     padding-top: 15px;
+}
+
+.logo-small{
+    display: none;
+width: 20px;
 }
 
 
@@ -76,7 +89,6 @@ p {
     color: white;
     padding-top: 20px;
 }
-
 
 .btn-play {
     font-size: 30px;
@@ -89,49 +101,197 @@ p {
     list-style: none;
 }
 
+.aside-bottom{
+    margin-top: 50px;
+}
+.aside-icon{
+    color: lightgray;
+    padding: 3px;
+}
 
+ .download{
+    display: flex;
+    width: 20px;
+}
+
+
+hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.profilo{
+    display: flex;
+    gap: 10px;
+}
+
+
+.profile{
+    width: 20px;
+    border-radius: 50%;
+}
 
 /* FINE ASIDE */
-.navbar ul {
+
+.navbar {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     color: grey;
     list-style: none;
-    margin-bottom: 30px;
+    margin-bottom:30PX;
     padding-top: 20px;
+    font-size: 20px;
+}
+.nav-item {
+    position: relative;
+    text-decoration: none;
+    color: grey;
+    font-size: 16px;
 }
 
-h2 {
+.nav-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    text-align: center;
+    height: 3px;
+    background-color: limegreen;
+    transform: scale(0);
+    transform-origin: center;
+}
+
+.nav-item:hover::after {
+    transform: scaleX(1);
+}
+
+h2, h4{
     color: white;
+}
+
+
+/* SOVRAPPOSIZIONE */
+.card-image{
+    position: relative;
+
+}
+.play-button{
+    display: none;
+    color: white;
+    position: absolute;
+    font-size: 50px;
+    /* cursor: pointer; */
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+}
+
+
+.col-10:hover .play-button{
+    opacity: 0.5;
+    display:block;
 }
 
 .col-1 {
     display: flex;
-    border: 1px solid white;
-    height: 200px;
+    flex-wrap: wrap;
     margin-top: 20px;
     margin-bottom: 60px;
     gap: 20px;
 }
-.col-10{
-width: 20%;
-height:200px;
-border: 1px solid white;
-gap:;
 
+.col-10 {
+width: 15%;
+height: auto;
+text-align: center;
+width: calc((100% - (20px * (var(--num-cols) - 1)))/ var(--num-cols)) ;
+min-width: 130px;
 }
-    
+
+.create{
+    padding-top: 30px;
+}
+
+.section-3 .col-10 img{
+    border-radius: 50%;
+    margin-top: 10px;
+}
+.section-3{
+    padding-top: 10px;
+}
 
 
 
-
-
-
-
-
+/* FOOTER */    
 .footer {
     width: 100%;
     height: 80px;
     background-color: black;
+}
+.footer-side{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+}
+.side-1{
+    display: flex;
+    align-items: center;
+    width: 35%;
+    height: 80px;
+}
+.sinister{
+    width: 60px;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+h5{
+    color: white;
+    font-size:10px;
+}
+
+.brano{
+    color: grey;
+    font-size: 10px;
+}
+.icon-1{
+    padding-left: 20px;
+}
+
+.icon{
+    color: grey;
+}
+
+/* SEZIONE PLAYER */
+
+.player{
+    width: 100%;
+    display: block;
+    text-align: center;
+    color: white;
+}
+
+.icon-music{
+    padding: 5px;
+    
+    
+}
+.progress-bar{
+    background-color: #ddd;
+    margin-top: 20px;
+    height: 5px;
+    width: 100%;
+}
+.progress-2{
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #ddd;
+    height: 5px;
+    width: 50%;
 }

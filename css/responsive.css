@@ -1,0 +1,51 @@
+
+
+
+@media  screen and (max-width: 768px) {
+    :root {
+        --num-cols: 4;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width:480px) {
+    :root {
+        --num-cols: 2;
+    }
+    .wrapper{
+width: 100%;
+    }
+
+.col-right{
+    width: 80%;
+}
+
+.col-left{
+    width: 80px;
+}
+
+.playlist{
+    display: none;
+}
+
+.big-logo{
+    display: none;
+}
+
+.aside-icon-1{
+    display: block;
+}
+.aside-bottom{
+    display: block;
+}
+.logo-small{
+    display: block;
+}
+.home{
+    display: none;
+}
+}

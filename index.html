@@ -10,23 +10,28 @@
 
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
     <div class="wrapper">
         <aside class="col-left">
             <div class="flex">
-                <img src="spotify/img/logo.svg" alt="Logo-principale">
+                <img class="big-logo" src="spotify/img/logo.svg" alt="Logo-principale">
+                <img class="logo-small" src="spotify/img/logo-small.svg" alt="">
                 <ul class="aside-list">
-                    <li><span><i class="fa-solid fa-house"></i></span> Home</li>
-                    <li><span><i class="fa-solid fa-magnifying-glass"></i></span> Cerca</li>
-                    <li><span><i class="fa-solid fa-book-open"></i></span> La tua libreria</li>
+                    <li ><a class="aside-icon" href="home"><i class="fa-solid fa-house"></i></a><span class="home">Home</span></li>
+
+                    <li><a class="aside-icon" href="cerca"><i class="fa-solid fa-magnifying-glass"></i></a><span class="home"> Cerca</span></li>
+
+                    <li><a class="aside-icon" href="libreria"><i class="fa-solid fa-book-open"></i></a><span class="home"> La tua libreria</span></li>
                 </ul>
             </div>
             <div class="playlist">
                 <h3>PLAYLIST</h3>
                 <p><button class="btn-play">+</button> Crea Playlist</p>
-                <ul>
+                 
+                <ul class="auto">
                     <li class="py-20">Nome Playlist</li>
                     <li class="py-20">Nome Playlist</li>
                     <li class="py-20">Nome Playlist</li>
@@ -35,7 +40,16 @@
                     <li class="py-20">Nome Playlist</li>
                     <li class="py-20">Nome Playlist</li>
                 </ul>
-
+            
+                <div class="aside-bottom">
+                    <img class="download" src="spotify/img/download.svg" alt="download">
+                    <span>Installa app</span>
+                </div>
+                <hr>
+                <div class="profilo">
+                    <img class="profile" src="spotify/img/profile.svg" alt="">
+                    <h3>John Doe</h3>
+                </div>
             </div>
         </aside>
 
@@ -46,40 +60,189 @@
                     <button class="header-btn">EFFETUA L'UPGRADE</button>
                 </div>
             </header>
+            <!-- BARRA CENTRALE NAV -->
             <div class="navbar">
-                <ul>
-                    <li>In Evidenza</li>
-                    <li>Podcast</li>
-                    <li>Classifiche</li>
-                    <li>Generi E Mood</li>
-                    <li>Nuove Uscite</li>
-                    <li>Scopri</li>
+                <ul class="navbar"> 
+                    <li><a href="#" class="nav-item">In Evidenza</a></li>
+                    <li><a href="#" class="nav-item">Podcast</a></li>
+                    <li><a href="#" class="nav-item">Classifiche</a></li>
+                    <li><a href="#" class="nav-item">Generi E Mood</a></li>
+                    <li><a href="#" class="nav-item">Nuove Uscite</a></li>
+                    <li><a href="#" class="nav-item">Scopri</a></li>
                 </ul>
             </div>
+            <!--FINE BARRA CENTRALE NAV -->
+
+            <!-- PRIMA COLONNA TRACK -->
             <h2>Recently played</h2>
             <div class="col-1">
-                <div class="col-10"><img src="spotify/img/metal_lifting.jpg" alt="metal"></div>
-                <div class="col-10"><img src="spotify/img/stranger.jpeg" alt=""></div>
-                <div class="col-10"><img src="spotify/img/aquietplace.jpeg" alt=""></div>
-                <div class="col-10"><img src="spotify/img/split.jpeg" alt=""></div>
-                <div class="col-10"><img src="spotify/img/cure.jpeg" alt=""></div>
-                <div class="col-10"><img src="spotify/img/sinister.jpeg" alt=""></div>
+                <div class="col-10">
+                    <div class="card-image">
+                        <img src="spotify/img/metal_lifting.jpg" alt="metal">
+                        <div class="play-button">
+                            <i class="fa-solid fa-circle-play"></i>
+                        </div>
+                    </div>
+                    <h4>Heavy Metal</h4>
+                    <span class="brano">Subtitle</span>
+                </div>
+                <div class="col-10">
+                    <div class="card-image">
+                        <img src="spotify/img/stranger.jpeg" alt="">
+                        <div class="play-button">
+                            <i class="fa-solid fa-circle-play"></i>
+                        </div>
+                    </div>
+                    <h4>Stranger Things, Vol.1(a Netflix Original Series Soundtrack)
+                    </h4>
+                    <span class="brano">Kyle Dixon & Micheal Stein</span>
+                </div>
+                <div class="col-10">
+                    <div class="card-image">
+                        <img src="spotify/img/aquietplace.jpeg" alt="">
+                        <div class="play-button">
+                            <i class="fa-solid fa-circle-play"></i>
+                        </div>
+                    </div>
+
+                    <h4>A quiet place</h4>
+                    <span class="brano">Subtitle</span>
+                </div>
+                <div class="col-10">
+                    <div class="card-image">
+                        <img src="spotify/img/split.jpeg" alt="">
+                        <div class="play-button">
+                            <i class="fa-solid fa-circle-play"></i>
+                        </div>
+                    </div>
+                    <h4>Split</h4>
+                    <span class="brano">Subtitle</span>
+                </div>
+                <div class="col-10">
+                    <div class="card-image">
+                        <img src="spotify/img/cure.jpeg" alt="">
+                        <div class="play-button">
+                            <i class="fa-solid fa-circle-play"></i>
+                        </div>
+                    </div>
+                    <h4>A cure for wellness</h4>
+                    <span class="brano">Subtitle</span>
+                </div>
+                <div class="col-10">
+                    <div class="card-image">
+                        <img src="spotify/img/sinister.jpeg" alt="">
+                        <div class="play-button">
+                            <i class="fa-solid fa-circle-play"></i>
+                        </div>
+                    </div>
+                    <h4>Sinister</h4>
+                    <span class="brano">Subtitle</span>
+                </div>
             </div>
-            <h2>Creato per John Doe</h2>
-            <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+            <!--FINE PRIMA COLONNA TRACK -->
+            <!-- SECONDA SEZIONE -->
+            <div class="create">
+                <h2>Creato per John Doe</h2>
+                <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+            </div>
             <div class="col-1">
-                <div class="col-10"></div>
-                <div class="col-10"></div>
+                <div class="col-10">
+                    <div class="card-image">
+                        <img src="spotify/img/radar.jpeg" alt="">
+                        <div class="play-button">
+                            <i class="fa-solid fa-circle-play"></i>
+                        </div>
+                    </div>
+                    <h4>Release Radar</h4>
+                </div>
+                <div class="col-10">
+                    <div class="card-image">
+                        <img src="spotify/img/player_left.jpg" alt="">
+                        <div class="play-button">
+                            <i class="fa-solid fa-circle-play"></i>
+                        </div>
+                    </div>
+                    <h4>Dally mix 1</h4>
+
+                </div>
             </div>
-            <h2>Artisti più popolari</h2>
-            <p>Più ascolti, più accurati saranno i suggerimenti.</p>
-            <div class="col-1">
-                <div class="col-10"></div>
-                <div class="col-10"></div>
-            </div>
+            <!--FINE SECONDA SEZIONE -->
+            <!-- TERZA SEZIONE -->
+            <section class="section-3">
+                <h2>Artisti più popolari</h2>
+                <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+                <div class="col-1">
+                    <div class="col-10">
+                        <div class="card-image">
+                            <img src="spotify/img/einaudi.jpeg" alt="">
+                            <div class="play-button">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+                        <h4>Enaudi</h4>
+                    </div>
+                    <div class="col-10">
+                        <div class="card-image">
+                            <img src="spotify/img/youg.jpeg" alt="">
+                            <div class="play-button">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </div>
+                        </div>
+                        <h4>Lana Del Ray</h4>
+                    </div>
+                </div>
+            </section>
+            <!--FINE TERZA SEZIONE -->
         </main>
     </div>
-    <footer class="footer"></footer>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-side">
+            <!-- SEZIONE SINISTRA -->
+            <div class="side-1">
+                <img class="sinister" src="spotify/img/sinister.jpeg" alt="">
+                <ul>
+                    <li>
+                        <h5>sinister</h5>
+                    </li>
+                    <li class="brano">Brano Nome</li>
+                </ul>
+
+
+                <div class="icon-1">
+                    <span class="icon"><i class="fa-solid fa-heart"></i></span>
+                    <span class="icon"><i class="fa-solid fa-folder"></i></span>
+                </div>
+            </div>
+            <!-- SEZIONE SINISTRA -->
+            <!-- SEZIONE CENTRALE -->
+            <div class="side-1">
+                <div class="player">
+                    <span class="icon-music"><i class="fa-solid fa-shuffle"></i></span>
+                    <span class="icon-music"><i class="fa-solid fa-step-backward"></i></span>
+                    <span class="icon-music"><i class="fa-solid fa-play-circle"></i></span>
+                    <span class="icon-music"><i class="fa-solid fa-step-forward"></i></span>
+                    <span class="icon-music"><i class="fa-solid fa-redo-alt"></i></span>
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+            <!-- SEZIONE CENTRALE -->
+
+            <!-- SEZIONE DESTRA -->
+            <div class="side-1">
+                <div class="player">
+                    <span class="icon-music"><i class="fa-solid fa-list-ul"></i></span>
+                    <span class="icon-music"><i class="fa-solid fa-desktop"></i></span>
+                    <span class="icon-music"><i class="fa-solid fa-volume-up"></i></span>
+                    <div class="progress-2"></div>
+                </div>
+                
+            </div>
+            <!-- SEZIONE DESTRA -->
+        </div>
+    </footer>
+    <!--FINE FOOTER -->
+
 </body>
 
 </html>
